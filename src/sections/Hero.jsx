@@ -39,7 +39,9 @@ const Hero = () => {
               Hi, I'm Quayyum, a developer based in Nigeria with a passion for
               code.
             </p>
-            <Button/>
+            <Button
+            className= "md:w-80 md:h-16 "
+            />
           </div>
         </header>
         {/* RIGHT: 3D MODEL */}
