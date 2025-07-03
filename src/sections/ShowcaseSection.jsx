@@ -17,11 +17,22 @@ const ShowcaseSection = () => {
     project3Ref.current,
   ];
 
-  cards.forEach((card, index) => {
+  projects.forEach((card, index) => {
     gsap.fromTo(card, {
       y: 50,
       opacity: 0,
-    });
+    },
+    {
+      y : 0,
+      opacity: 1,
+      duration: 1,
+      delay : 0.3 * (index + 1),
+      ScrollTrigger:{
+        trigger: card,
+        start : 'top bottom-=100'
+      }
+    }
+  );
   });
 
   useGSAP(() => {
