@@ -1,6 +1,6 @@
 import React from 'react'
 import { counterItems } from '../constants'
-import { div } from 'three/tsl'
+import CountUp from 'react-countup';
 
 const AnimatedCounter = () => {
   return (
@@ -11,8 +11,9 @@ const AnimatedCounter = () => {
             <div
               key={counterItems.label}
               className="counter-number text-white text-5xl font bold mb-2">
-              0 {item.suffix}
+              <CountUp suffix={item.sufix} end={item.value}/>
             </div>
+            <div className='text-white-50 text-lg'>{item.label}</div>
           </div>
         ))}
       </div>
