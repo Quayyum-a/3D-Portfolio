@@ -1,22 +1,20 @@
-import React, { useEffect, useState } from 'react'
-import { navLinks } from '../constants'
+import React, { useEffect, useState } from "react";
+import { navLinks } from "../constants";
 
 const NavBar = () => {
-  const[scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  useEffect(()=> {
+  useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
-      setScrolled(true);
-    }
-    window.addEventListener('scroll', handleScroll);
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll)
-  },[])
-
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="navbar">
+    <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
         <a className="logo" href="#hero">
           Quayyum Ariyo
@@ -27,7 +25,7 @@ const NavBar = () => {
               <li key={name} className="group">
                 <a href={link}>
                   <span>{name}</span>
-                  <span className='underline'/>
+                  <span className="underline" />
                 </a>
               </li>
             ))}
@@ -41,6 +39,6 @@ const NavBar = () => {
       </div>
     </header>
   );
-}
+};
 
-export default NavBar
+export default NavBar;
