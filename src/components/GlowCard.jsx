@@ -6,6 +6,16 @@ const GlowCard = ({card, children, index}) => {
   const handleMouseMove = (index) => (e) => {
     const card = cardRefs.current[index];
     if(card) return;
+    // get the mouse position relative to the card
+
+    const rect = card.getBoundingClientRect();
+    const mouseX = e.clientX - rect.left - rect.width /2;
+    const mouseY = e.clientY - rect.top - rect.height /2;
+
+    // calc the angle from the center of the card
+    let angle = Math.atan2(mouseY, mouseX) * (180/ Math.Pi);
+
+    angle = 
   }
 
   return (
