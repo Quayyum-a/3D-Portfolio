@@ -26,6 +26,4 @@ const GlowCard = ({card, children, index}) => {
   )
 }
 
-
-
 export default GlowCard
