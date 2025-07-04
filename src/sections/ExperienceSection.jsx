@@ -37,8 +37,8 @@ const ExperienceSection = () => {
                   </div>
                   <div>
                     <h1 className='font-semibold text-3xl'>{card.title}</h1>
-                    <p >
-
+                    <p className='my-5 text-white-50'>
+                      {card.date}
                     </p>
                   </div>
                 </div>
