@@ -17,7 +17,7 @@ const GlowCard = ({card, children, index}) => {
 
     angle = (angle + 360) % 360;
 
-    
+    card.style.setProperty('--start', angle + 60);
   }
 
   return (
