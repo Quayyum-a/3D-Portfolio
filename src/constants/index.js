@@ -74,18 +74,18 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Architect of Innovation",
+    desc: "Pioneering transformative solutions by blending creativity with technical mastery—turning ambitious ideas into reality.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Empathetic Collaborator",
+    desc: "Fostering trust and synergy through transparent communication, active listening, and a genuine commitment to your vision.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Relentless Excellence",
+    desc: "Consistently exceeding expectations by delivering robust, scalable software—on time, with uncompromising attention to detail.",
   },
 ];
 
@@ -147,7 +147,8 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Quayyum brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review:
+      "Quayyum brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "Frontend Developer",
@@ -159,7 +160,8 @@ const expCards = [
     ],
   },
   {
-    review: "Quayyum’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review:
+      "Quayyum's contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: "Full Stack Developer",
@@ -171,7 +173,8 @@ const expCards = [
     ],
   },
   {
-    review: "Quayyum’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review:
+      "Quayyum's work on Appwrite's mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
     title: "React Native Developer",
@@ -204,7 +207,7 @@ const testimonials = [
     name: "Esther Howard",
     mentions: "@estherhoward",
     review:
-      "I can’t say enough good things about Quayyum. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "I can't say enough good things about Quayyum. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
     imgPath: "/images/client1.png",
   },
   {
@@ -225,14 +228,14 @@ const testimonials = [
     name: "Marvin McKinney",
     mentions: "@marvinmckinney",
     review:
-      "Quayyum was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "Quayyum was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that's both modern and easy to navigate. Fantastic work overall.",
     imgPath: "/images/client5.png",
   },
   {
     name: "Floyd Miles",
     mentions: "@floydmiles",
     review:
-      "Quayyum’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "Quayyum's expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He's a true professional!",
     imgPath: "/images/client4.png",
   },
   {
