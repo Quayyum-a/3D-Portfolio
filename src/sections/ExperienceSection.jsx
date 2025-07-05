@@ -24,7 +24,6 @@ const ExperienceSection = () => {
       });
     });
 
-    // from the top of the timeline to 70% down the screen
     gsap.to(".timeline", {
       // Set the origin of the animation to the bottom of the timeline
       transformOrigin: "bottom bottom",
