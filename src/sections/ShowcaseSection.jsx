@@ -11,7 +11,6 @@ const ShowcaseSection = () => {
   const project2Ref = useRef(null);
   const project3Ref = useRef(null);
 
-
   useGSAP(() => {
     const projects = [
       project1Ref.current,
@@ -30,7 +29,7 @@ const ShowcaseSection = () => {
           opacity: 1,
           duration: 1,
           delay: 0.3 * (index + 1),
-          ScrollTrigger: {
+          scrollTrigger: {
             trigger: card,
             start: "top bottom-=100",
           },
