@@ -14,7 +14,6 @@ const ExperienceSection = () => {
       gsap.from(card, {
         xPercent: -100,
         opacity: 0,
-        // Set the origin of the animation to the left side of the card
         transformOrigin: "left left",
         // Animate over 0.6 seconds
         duration: 0.6,
