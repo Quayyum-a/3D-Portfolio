@@ -11,7 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 const ExperienceSection = () => {
   useGSAP(() => {
     gsap.utils.toArray(".timeline-card").forEach((card) => {
-      // and fade in
       gsap.from(card, {
         // Move the card in from the left
         xPercent: -100,
