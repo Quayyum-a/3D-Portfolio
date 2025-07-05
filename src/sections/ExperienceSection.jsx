@@ -12,7 +12,6 @@ const ExperienceSection = () => {
   useGSAP(() => {
     gsap.utils.toArray(".timeline-card").forEach((card) => {
       gsap.from(card, {
-        // Move the card in from the left
         xPercent: -100,
         // Make the card invisible at the start
         opacity: 0,
