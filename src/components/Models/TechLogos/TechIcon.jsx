@@ -10,12 +10,12 @@ const TechIconModel = ({ model }) => {
   useEffect(() => {
     if (model.name === "Interactive Developer") {
       scene.scene.traverse((child) => {
-        if (child.isMesh && child.name === "Object_5") {
-          child.material = new THREE.MeshStandardMaterial({ color: "white" });
+        if (child.isMesh) {
+          child.material = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
         }
       });
     }
-  }, [scene, model.name]);
+  }, [scene]);
   return (
     <Canvas>
       <ambientLight intensity={0.3} />
