@@ -13,7 +13,6 @@ const ExperienceSection = () => {
     gsap.utils.toArray(".timeline-card").forEach((card) => {
       gsap.from(card, {
         xPercent: -100,
-        // Make the card invisible at the start
         opacity: 0,
         // Set the origin of the animation to the left side of the card
         transformOrigin: "left left",
