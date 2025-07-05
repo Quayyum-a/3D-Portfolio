@@ -10,7 +10,11 @@ const TechStack = () => {
           title="My Preferred Tech Stack"
           sub="🤝 The Skills I Bring to the Table "
         />
-        <div className="tech-grid">{techStackIcons.map((icon))}</div>
+        <div className="tech-grid">{techStackIcons.map((icon) => (
+          <div key={icon.name}>
+            {icon.name}
+          </div>
+        ))}</div>
       </div>
     </div>
   );
