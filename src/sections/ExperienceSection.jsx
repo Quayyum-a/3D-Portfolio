@@ -19,7 +19,6 @@ const ExperienceSection = () => {
         ease: "power1.out",
         scrollTrigger: {
           trigger: card,
-          // Trigger the animation when the card is 80% down the screen
           start: "top 80%",
         },
       });
