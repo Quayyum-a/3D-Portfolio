@@ -17,9 +17,7 @@ const ExperienceSection = () => {
         transformOrigin: "left left",
         duration: 0.6,
         ease: "power1.out",
-        // Trigger the animation when the card is 80% of the way down the screen
         scrollTrigger: {
-          // The card is the trigger element
           trigger: card,
           // Trigger the animation when the card is 80% down the screen
           start: "top 80%",
