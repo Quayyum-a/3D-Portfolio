@@ -25,7 +25,6 @@ const ExperienceSection = () => {
     });
 
     gsap.to(".timeline", {
-      // Set the origin of the animation to the bottom of the timeline
       transformOrigin: "bottom bottom",
       // Animate the timeline height over 1 second
       ease: "power1.inOut",
