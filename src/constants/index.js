@@ -157,22 +157,22 @@ const techStackIcons = [
   },
   {
     name: "Java Developer",
-    modelPath: "/models/java-transformed.glb",
+    modelPath: "/models/java.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
-  {
-    name: "MERN Stack Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
-  },
-  {
-    name: "TypeScript Developer",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
-  },
+  // {
+  //   name: "MERN Stack Developer",
+  //   modelPath: "/models/node-transformed.glb",
+  //   scale: 5,
+  //   rotation: [0, -Math.PI / 2, 0],
+  // },
+  // {
+  //   name: "TypeScript Developer",
+  //   modelPath: "/models/python-transformed.glb",
+  //   scale: 0.8,
+  //   rotation: [0, 0, 0],
+  // },
 ];
 
 const expCards = [
