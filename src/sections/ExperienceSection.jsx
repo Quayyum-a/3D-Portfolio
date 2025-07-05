@@ -16,7 +16,6 @@ const ExperienceSection = () => {
         opacity: 0,
         transformOrigin: "left left",
         duration: 0.6,
-        // Use a simple ease-out curve
         ease: "power1.out",
         // Trigger the animation when the card is 80% of the way down the screen
         scrollTrigger: {
