@@ -26,7 +26,6 @@ const ExperienceSection = () => {
 
     gsap.to(".timeline", {
       transformOrigin: "bottom bottom",
-      // Animate the timeline height over 1 second
       ease: "power1.inOut",
       // Trigger the animation when the timeline is at the top of the screen
       // and end it when the timeline is at 70% down the screen
