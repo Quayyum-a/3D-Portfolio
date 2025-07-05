@@ -27,16 +27,11 @@ const ExperienceSection = () => {
     gsap.to(".timeline", {
       transformOrigin: "bottom bottom",
       ease: "power1.inOut",
-      // Trigger the animation when the timeline is at the top of the screen
-      // and end it when the timeline is at 70% down the screen
       scrollTrigger: {
         trigger: ".timeline",
         start: "top center",
         end: "70% center",
-        // Update the animation as the user scrolls
         onUpdate: (self) => {
-          // Scale the timeline height as the user scrolls
-          // from 1 to 0 as the user scrolls up the screen
           gsap.to(".timeline", {
             scaleY: 1 - self.progress,
           });
@@ -44,28 +39,18 @@ const ExperienceSection = () => {
       },
     });
 
-    // Loop through each expText element and animate them in
-    // as the user scrolls to each text element
     gsap.utils.toArray(".expText").forEach((text) => {
-      // Animate the text opacity from 0 to 1
       gsap.from(text, {
-        // Set the opacity of the text to 0
         opacity: 0,
-        // Animate over 0.5 seconds
         duration: 0.5,
-        // Use a simple ease-out curve
         ease: "power1.out",
-        // Trigger the animation when the text is 70% down the screen
         scrollTrigger: {
-          // The text is the trigger element
           trigger: text,
-          // Trigger the animation when the text is 70% down the screen
           start: "top 70%",
         },
       });
     });
 
-    // Animate timeline logos to pop in sync with cards
     gsap.utils.toArray(".timeline-logo").forEach((logo) => {
       gsap.from(logo, {
         scale: 0,
