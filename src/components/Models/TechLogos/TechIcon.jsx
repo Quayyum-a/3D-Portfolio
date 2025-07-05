@@ -1,9 +1,11 @@
 import { Environment, Float, OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import React, { useEffect } from "react";
+import React, { useEffect, Suspense } from "react";
 import * as THREE from "three";
 
-const TechIcon = ({ model }) => {
+const Fallback = () => <div style={{ color: "red" }}>Model failed to load</div>;
+
+const TechIconModel = ({ model }) => {
   const scene = useGLTF(model.modelPath);
   useEffect(() => {
     if (model.name === "Interactive Developer") {
@@ -13,14 +15,13 @@ const TechIcon = ({ model }) => {
         }
       });
     }
-  }, [scene]);
+  }, [scene, model.name]);
   return (
     <Canvas>
       <ambientLight intensity={0.3} />
       <directionalLight position={[5, 5, 5]} intensity={1} />
       <Environment preset="city" />
       <OrbitControls enableZoom={false} />
-
       <Float speed={5.5} rotationIntensity={0.5} floatIntensity={0.9}>
         <group scale={model.scale} rotation={model.rotation}>
           <primitive object={scene.scene} />
@@ -29,5 +30,13 @@ const TechIcon = ({ model }) => {
     </Canvas>
   );
 };
+
+const TechIcon = ({ model }) => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <React.Suspense fallback={<Fallback />}>
+      <TechIconModel model={model} />
+    </React.Suspense>
+  </Suspense>
+);
 
 export default TechIcon;
