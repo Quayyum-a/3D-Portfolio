@@ -33,9 +33,7 @@ const TechIconModel = ({ model }) => {
 
 const TechIcon = ({ model }) => (
   <Suspense fallback={<div>Loading...</div>}>
-    <React.Suspense fallback={<Fallback />}>
-      <TechIconModel model={model} />
-    </React.Suspense>
+    <TechIconModel model={model} />
   </Suspense>
 );
 
