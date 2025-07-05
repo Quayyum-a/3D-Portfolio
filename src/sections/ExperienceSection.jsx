@@ -15,7 +15,6 @@ const ExperienceSection = () => {
         xPercent: -100,
         opacity: 0,
         transformOrigin: "left left",
-        // Animate over 0.6 seconds
         duration: 0.6,
         // Use a simple ease-out curve
         ease: "power1.out",
