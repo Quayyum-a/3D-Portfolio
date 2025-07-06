@@ -31,10 +31,35 @@ const TechIconModel = ({ model }) => {
   );
 };
 
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+  componentDidCatch(error, errorInfo) {
+    // You can log error info here
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div style={{ color: "red" }}>
+          Something went wrong loading the 3D model.
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 const TechIcon = ({ model }) => (
-  <Suspense fallback={<div>Loading...</div>}>
-    <TechIconModel model={model} />
-  </Suspense>
+  <ErrorBoundary>
+    <Suspense fallback={<div>Loading...</div>}>
+      <TechIconModel model={model} />
+    </Suspense>
+  </ErrorBoundary>
 );
 
 export default TechIcon;
